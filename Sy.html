@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #box {
+        width: 1920px;
+    }
+
+    #banner {
+        width: 1920px;
+        height: 120px;
+        display: flex;
+    }
+
+    .img1 {
+        width: 275px;
+        height: 120px;
+        margin-left: 360px;
+    }
+
+    #banner>span {
+        margin-left: 85px;
+        margin-top: 71px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    #nav {
+        width: 1920px;
+        height: 510px;
+    }
+
+    .img2 {
+        width: 1920px;
+        height: 510px;
+    }
+
+    #txt {
+        width: 1920px;
+        height: 210px;
+        text-align: center;
+    }
+
+    .p1 {
+        font-size: 24px;
+        margin-top: 94px;
+        margin-right: 240px;
+    }
+    .gyx-p1{
+        font-size: 24px;
+        margin-top: 94px;
+        margin-right: 330px;
+    }
+    .gyx-p2{
+        font-size: 17px;
+        margin-top: 94px;
+        margin-right: 320px;
+    }
+    #txt>span {
+        font-size: 12px;
+        color: gray;
+        margin-right: 240px;
+    }
+
+    #bodys {
+        width: 100%;
+        height: 480px;
+        display: flex;
+    }
+
+    .ghs {
+        width: 320px;
+        height: 225px;
+        margin-left: 180px;
+    }
+
+    .p2 {
+        font-size: 17px;
+    }
+
+    .div2 {
+        width: 320px;
+        height: 1px;
+        background-color: black;
+        margin-top: 12px;
+    }
+
+    .span1 {
+        width: 320px;
+        font-size: 12px;
+        color: gray;
+    }
+
+    .chakan {
+        width: 112px;
+        height: 37px;
+        border: solid 1px black;
+        border-radius: 30px;
+        text-align: center;
+        line-height: 37px;
+        margin-top: 290px;
+        margin-left: -685px;
+    }
+
+    #txt2 {
+        width: 1920px;
+        height: 210px;
+        text-align: center;
+        background-color: #eeeeee;
+    }
+
+    #img {
+        width: 100px;
+        height: 570px;
+        margin-left: 250px;
+    }
+
+    #tuijian {
+        width: 1920px;
+        height: 400px;
+        background-color: #eeeeee;
+        display: flex;
+        margin-top: 90px;
+    }
+
+    .div3 {
+        width: 500px;
+        height: 220px;
+        margin-top: 90px;
+        margin-left: 360px;
+    }
+
+    .div4 {
+        width: 500px;
+        height: 220px;
+        margin-top: 90px;
+        margin-left: 65px;
+    }
+
+    .p3 {
+        font-size: 12px;
+    }
+
+    .span2 {
+        font-size: 12px;
+        margin-top: 50px;
+    }
+
+    .mf {
+        width: 400px;
+        height: 34px;
+        display: flex;
+        margin-left: 650px;
+        margin-top: 40px;
+    }
+
+    .span3 {
+        width: 95px;
+        height: 34px;
+        background-color: #eeeeee;
+        text-align: center;
+        line-height: 34px;
+        margin-left: 7px;
+    }
+
+    #foote {
+        width: 1920px;
+        height: 443px;
+        display: flex;
+    }
+
+    .ter1 {
+        width: 276px;
+        height: 443px;
+        margin-left: 250px;
+    }
+
+    .ter {
+        width: 276px;
+        height: 443px;
+        margin-left: 31px;
+    }
+    footer{
+    width: 1920px;
+    height: 345px;
+    background:#eaeaea ;
+    padding-top: 65px;
+}
+
+.foot_box{
+    margin: 0 auto;
+    width: 1200px;
+    height: 222px;
+}
+
+.foot_box_left{
+    width: 540px;
+    height: 222px;
+    float: left;
+}
+.foot_box_right{
+    width: 660px;
+    height: 222px;
+    float: left;
+}
+
+.foot_box_left h3{
+    font-size: 22px;
+    font-weight: 100;
+    color: #9f9f9f;
+}
+
+.foot_box_left .phone_site{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    width: 460px;
+    height: 45px;
+}
+
+.foot_box_left .phone_site p{
+    color: #a0a0a0;
+}
+
+.foot_box_left .logo div{
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    background: #a0a0a0;
+    color: white;
+    text-align: center;
+    line-height: 31px;
+    float: left;
+    margin-right: 30px;
+}
+.foot_box_right ul{
+    float:left;
+    margin-right: 35px;
+}
+.foot_box_right ul li{
+    line-height: 25px;
+    color: #a0a0a0;
+}
+.foot_box_right ul li:nth-child(1){
+    font-weight: bolder;
+}
+
+.foot_box_right ul li:nth-child(2){
+    line-height: 22px;
+}
+
+.foot{
+    margin:auto;
+    border-top: 2px solid #a0a0a0;
+    width: 1200px;
+    height: 45px;
+    color: #a0a0a0;
+    line-height: 45px;
+}
+</style>
+
+<div>
+    <div id="box">
+        <div id="banner">
+            <img class="img1" src="./images/sy/img1.jpg">
+            <span>首页</span>
+            <span>走进郎朗</span>
+            <span>资讯动态</span>
+            <span>合作伙伴</span>
+            <span>辅助功能</span>
+        </div>
+        <div id="nav">
+            <img class="img2" src="./images/sy/img2.jpg">
+        </div>
+        <div id="txt">
+            <p class="p1">郎朗口腔</p>
+            <span class="p2">呵护牙齿健康 创造美好未来 丨 CARE FOR TEETH TO CREATE A BETTER FUTURE </span>
+        </div>
+        <div id="bodys">
+            <div class="ghs">
+                <div class="div1">
+                    <img src="./images/sy/img3.jpg" alt="">
+                </div>
+                <p class="p2">郎朗口腔</p>
+                <div class="div2"></div>
+                <span class="span1">诊所内设有典雅舒适、风格各异的独立医疗室，如奇趣可爱的儿童诊室、适应女性需求的Hello Kitty</span>
+            </div>
+            <div class="ghs">
+                <div class="div1">
+                    <img src="./images/sy/img4.jpg" alt="">
+                </div>
+                <p class="p2">舒适的就诊环境</p>
+                <div class="div2"></div>
+                <span class="span1">诊所内设有典雅舒适、风格各异的独立医疗室，如奇趣可爱的儿童诊室、适应女性需求的Hello Kitty</span>
+            </div>
+            <div class="ghs">
+                <div class="div1">
+                    <img src="./images/sy/img5.jpg" alt="">
+                </div>
+                <p class="p2">高端的医疗设备</p>
+                <div class="div2"></div>
+                <span class="span1">郎朗口腔拥有全球先进口腔诊疗技术，引进国外多款高端的齿科医疗设备。包括：德国进口种植机</span>
+            </div>
+            <div class="chakan">
+                查看更多
+            </div>
+        </div>
+        <div id="txt2">
+            <p class="gyx-p1">郎朗公益</p>
+            <span class="gyx-p2">呵护牙齿健康 创造美好未来 丨 CARE FOR TEETH TO CREATE A BETTER FUTURE </span>
+        </div>
+        <div id="img">
+            <img src="./images/sy/img14.jpg" alt="">
+        </div>
+        <!--  -->
+        <div id="tuijian">
+            <div class="div3">
+                <img src="./images/sy/img9.jpg" alt="">
+            </div>
+            <div class="div4">
+                <h3>牙周主治医师</h3>
+                <p class="p3">擅长：仿真陶瓷牙修复、牙周系统治疗、残根残冠的保存治疗等。</p>
+                <span class="span2">国内知名大学口腔医学学士，曾就职于管段私人齿科工作室，从事口腔事业10余年
+                    对口腔各类常见疾病的临床治疗积累了丰富经验。积极学习新技术的临床应用，不断进修提升
+                    精通牙体保存治疗。数次参加北京医科大学牙周学习研究项目，香港大学牙周学习研究项目
+                    技术上追求完美，坚持“微创无痛治疗”原则，深的患者的信赖
+                </span>
+                <h3>查看更多→</h3>
+            </div>
+        </div>
+        <!--  -->
+        <div id="txt">
+            <p class="p1">资讯动态</p>
+            <span class="p2">呵护牙齿健康 创造美好未来 丨 CARE FOR TEETH TO CREATE A BETTER FUTURE </span>
+            <div class="mf">
+                <div class="span3">行业动态</div>
+                <div class="span3">郎朗咨询</div>
+                <div class="span3">媒体报道</div>
+                <div class="span3">公益活动</div>
+            </div>
+
+        </div>
+        <!--  -->
+        <div id="foote">
+            <div class="ter1">
+                <img src="./images/sy/img10.jpg" alt="">
+                <p>你的牙齿健康吗</p>
+                <p>2016-09-27</p>
+                <span>
+                    郎朗口腔“合赢未来，与资本共舞”口腔行业峰会
+                    继山东青岛第一站后，即将迎来第二站：福建厦门站
+                </span>
+            </div>
+            <div class="ter">
+                <img src="./images/sy/img11.jpg" alt="">
+                <p>你的牙齿健康吗</p>
+                <p>2016-09-27</p>
+                <span>
+                    郎朗口腔“合赢未来，与资本共舞”口腔行业峰会
+                    继山东青岛第一站后，即将迎来第二站：福建厦门站
+                </span>
+            </div>
+            <div class="ter">
+                <img src="./images/sy/img12.jpg" alt="">
+                <p>你的牙齿健康吗</p>
+                <p>2016-09-27</p>
+                <span>
+                    郎朗口腔“合赢未来，与资本共舞”口腔行业峰会
+                    继山东青岛第一站后，即将迎来第二站：福建厦门站
+                </span>
+            </div>
+            <div class="ter">
+                <img src="./images/sy/img13.jpg" alt="">
+                <p>你的牙齿健康吗</p>
+                <p>2016-09-27</p>
+                <span>
+                    郎朗口腔“合赢未来，与资本共舞”口腔行业峰会
+                    继山东青岛第一站后，即将迎来第二站：福建厦门站
+                </span>
+            </div>
+        </div>
+        <!--  -->
+        <footer>
+                <div class="foot_box">
+                    <div class="foot_box_left">
+                        <h3>郎朗医疗投资投资有限公司</h3>
+                        <div class="phone_site">
+                            <p>集团总部热线：4000-890-608</p>
+                            <p>集团总部地址：集团总部地址:广东省深圳市南山区高新南-道3号富诚大厦楼</p>
+                        </div>
+        
+                        <div class="logo">
+                            <div>微</div>
+                            <div>微</div>
+                        </div>
+                    </div>
+                    <div class="foot_box_right">
+                        <ul>
+                            <li>走进朗朗</li>
+                            <li>—————</li>
+                            <li>朗朗简介</li>
+                            <li>朗朗优势</li>
+                            <li>企业荣誉</li>
+                            <li>团队风采</li>
+                        </ul>
+        
+                        <ul>
+                            <li>咨询动态</li>
+                            <li>—————</li>
+                            <li>行业动态</li>
+                            <li>朗朗咨询</li>
+                            <li>媒体报道</li>
+                            <li>公益活动</li>
+                        </ul>
+        
+                        <ul>
+                            <li>合作伙伴</li>
+                            <li>—————</li>
+                            <li>门诊列表</li>
+                            <li>门诊详情</li>
+                            <li>交通指引</li>
+                        </ul>
+        
+                        <ul>
+                            <li>辅助功能</li>
+                            <li>—————</li>
+                            <li>公众号指引</li>
+                            <li>交通指南</li>
+                            <li>在线客服</li>
+                            <li>一键拨号</li>
+                        </ul>
+        
+                        <ul>
+                            <li>联系我们</li>
+                            <li>—————</li>
+                            <li>联系我们</li>
+                            <li>加入我们</li>
+                            <li>在线留言</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="foot">
+                    ◎2005 - 2016朗朗口腔医疗投资有限公司版权所有粤I(CP备08130115号-1
+                </div>
+            </footer>
+    </div>
+</div>
+
+</html>
